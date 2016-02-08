@@ -19,5 +19,5 @@ def build(bld):
         cflags   = ['-Wall'],
         cxxflags = ['-std=c++0x', '-Wall', '-s', '-Ofast'],
         lib      = [libcxx, 'tbb'],
-        libpath  = ['../'],
-        includes = ['.', '../', bld.env.TBB_ROOT])
+        libpath  = ['../', '/usr/local/lib'],
+        includes = ['.', '../', bld.env.TBB_ROOT,'/usr/local/include/'])
